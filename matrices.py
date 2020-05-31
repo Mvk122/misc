@@ -84,9 +84,3 @@ class matrice(object):
 
     def get(self):
         return deepcopy(self.matrix)
-
-test = matrice((2,2))
-test.addelement(1,0,0)
-test.addelement(2,0,1)
-test.addelement(3,1,0)
-test.addelement(4,1,1)
