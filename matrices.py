@@ -15,7 +15,9 @@ class matrice(object):
 
     def addelement(self, element, row, column):
         self.matrix[row][column] = element
+        self.columns[column][row] = element
         return self.matrix
+
 
     def getelement(self, row, column):
         return self.matrix[row][column]
