@@ -86,3 +86,13 @@ class matrice(object):
 
     def get(self):
         return deepcopy(self.matrix)
+
+    #replaces all occurences of an element with another element
+    def replaceall(self, toReplace, replacedWith):
+        for rowindex, row in enumerate(self.matrix):
+            for index, element in enumerate(row):
+                if element == toReplace:
+                    self.matrix[rowindex][index] = replacedWith
+                    self.columns[index][rowindex] = replacedWith
+        return None
+    
